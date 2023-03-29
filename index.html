@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        body {
+        background-image: url("https://files.porsche.com/filestore/image/multimedia/none/motorsport-racingcars-991-2nd-gt3-r-launch-intro/normal/9583dde4-8274-11eb-80d3-005056bbdc38/porsche-normal.jpg");
+        background-size: cover;    
+}
+        .container {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .btn {
+            background-color: #3e3f44c4;
+            color: white;
+            font-size: 16px;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease-in-out;
+            margin: 20px 0;
+        }
+        .btn:hover {
+            background-color: #000000;
+        }
+        .btn3 {
+            background-color: #3e3f44c4;
+            color: white;
+            font-size: 16px;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease-in-out;
+            margin: 20px 0;
+        }
+        .btn3:hover {
+            background-color: #000000;
+        }
+        .prozvon {
+            background-color: #3e3f44c4;
+            color: white;
+            font-size: 16px;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            border: 5px solid rgba(0, 0, 0, 0.404);
+            transition: background-color 0.3s ease-in-out;  
+        }
+        .p_col_number{
+            padding: 10px;
+            background-color: #3e3f44c4;
+			color: hsl(112, 48%, 94%); /* Устанавливаем цвет текста */
+            border: 4px solid rgba(0, 0, 0, 0.404);
+            padding: 10px;
+        }
+        .title{
+            padding: 10px;
+            background-color: #3e3f44c4;
+			color: hsl(112, 48%, 94%); /* Устанавливаем цвет текста */
+            border: 4px solid rgba(0, 0, 0, 0.404);
+            padding: 10px;
+        }
+        .input-container {
+          font-size: 2em;
+          font-weight: bold;
+          color: white;
+          background-color: #3e3f44c4;
+          width: 25%;
+        }
+        .doz {
+            background-color: #3e3f44c4;
+            color: white;
+            font-size: 16px;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease-in-out;
+            margin: 20px 0;
+        }
+        .doz:hover {
+            background-color: #000000;
+        }
+        .nedoz {
+            background-color: #3e3f44c4;
+            color: white;
+            font-size: 16px;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease-in-out;
+            margin: 20px 0;
+        }
+        .nedoz:hover {
+            background-color: #000000;
+        }
+
+    </style>
+        <div class="input-container">
+            <span>Номер компа: </span><span id="Input_value"></span>
+            <div id="missed-calls">Недоз: 0</div>
+            <div id="answered-calls">Доз: 0</div>
+        </div>
+        <div class="container">
+            <h1 class="title" id="number"></h1>
+            <div class="item_btn">
+                <button class="btn" id="call-btn" style="margin-top: -60px;">Вызов</button>
+                <button  class= "nedoz" id="answered-call-btn"style="margin-top: -60px;">Дозвон</button>
+                <button class= "doz" id="missed-call-btn"style="margin-top: -60px;">Недозвон</button>
+                <button class="btn3" id="copy-btn" style="margin-top: -60px;">Копировать номер</button>
+            </div>
+            <h2 class="p_col_number" id="remaining-numbers"></h2>
+            <form class="prozvon">
+                <label for="phone-number"></label>
+                <input type="text" id="phone-number" name="phone-number" placeholder="Введите номер телефона">
+                <button type="submit" id="call-btn">Позвонить в WhatsApp</button>
+            </form>
+        </div>
+    
+    <script>
+
+        const computerNumber = window.prompt('Введите номер вашего компьютера:');
+        const inputValueElement = document.getElementById('Input_value');
+              inputValueElement.textContent = computerNumber;
+
+        const numbers = [];
+        const userNumber = parseInt(computerNumber);
+
+        if (userNumber == 36) {
+            numbers.push(
+        '79257923282',
+        '79093225121',
+        '79636595027',
+        '79067659231',
+        '79050628909',
+        '79095769136',
+        '79062958970',
+        '79969587661',
+        '79373936469',
+        '79064712944',
+        '79283270295',
+        '79265980712',
+        '79219093811',
+        '79263160844',
+        '79614023231',
+        '79272467486',
+        '79278003301',
+        '79600611606',
+        '79312442969',
+        '79270707589',
+        '79051033312',
+        '79301181969',
+        '79295258126',
+        '79272546853',
+        '79625888589',
+        '79205515596',
+        '79282665343',
+        '79691234133',
+        '79067371805',
+        '79264933209',
+        '79372080158',
+        '79219357060',
+        '79263817262',
+        '79033581121',
+        '79281438422',
+        '79201701153',
+        '79271806912',
+        '79205670865',
+        '79257094244',
+        '79312025347',
+        '79204184321',
+        '79379181259',
+        '79624203658',
+        '79064078008',
+        '79647005445',
+        '79035436244',
+        '79208517567',
+        '79275672048',
+        '79258928968',
+        '79092232232',
+        '79204642701',
+        '79280690302',
+        '79259145488',
+        '79204615524',
+        '79058715288',
+        '79031336630',
+        '79061163737',
+        '79259293436',
+        '79271233566',
+        '79256170435',
+        '79209911351',
+        '79204692601',
+        '79271849816',
+        '79372408618',
+        '79999411755',
+        '79614902826',
+        '79651681943',
+        '79661450204',
+        '79202653275',
+        '79066186453',
+        '79034095268',
+        '79051453340',
+        '79214693804',
+        '79297727254',
+        '79219317503',
+        '79658854568',
+        '79271281980',
+        '79271463434',
+        '79279188331',
+        '79272673644',
+        '79997879241',
+        '79064310402',
+        '79269163129',
+        '79212086558',
+        '79212705606',
+        '79054086750',
+        '79213532080',
+        '79274460210',
+        '79064085778',
+        '79624459092',
+        '79094573401',
+        '79038778984',
+        '79661102858',
+        '79690440099',
+        '79251742270',
+        '79272523722',
+        '79219300172',
+        '79091667606',
+        '79050293952',
+        '79061465316',
+        )
+        } 
+
+        let missedCalls = 0;
+        let answeredCalls = 0;
+        
+        const missedCallBtn = document.getElementById('missed-call-btn');
+        const answeredCallBtn = document.getElementById('answered-call-btn');
+
+        const missedCallsEl = document.getElementById('missed-calls');
+        const answeredCallsEl = document.getElementById('answered-calls');
+
+        function calculateTotalCalls(missedCalls, answeredCalls) {
+            var totalCalls = missedCalls + answeredCalls;
+            return totalCalls;
+        }       
+       
+        function calculatePercentage(answeredCalls, totalCalls) {
+            var percentage = (answeredCalls / totalCalls) * 100;
+            return percentage;
+        }
+       
+       
+       
+
+        answeredCallBtn.addEventListener('click', function() {
+            if (currentNumber < 1) {
+            missedCalls = 0
+            }
+            else {
+                answeredCalls++;
+        }});
+
+        answeredCallBtn.addEventListener('click', function() {
+            if (numbers.length > 0) {
+                currentNumber = numbers.shift();
+                localStorage.setItem('currentNumber', currentNumber);
+
+                updateNumber();
+                } else {
+                    currentNumber = null;
+                    localStorage.removeItem('currentNumber');
+
+                    updateNumber();
+                }
+            }
+        );
+
+        answeredCallBtn.addEventListener('click', function() {
+            var totalCalls = calculateTotalCalls(missedCalls, answeredCalls);
+            var percentage = calculatePercentage(answeredCalls, totalCalls);
+            if (percentage <= 20) {
+                answeredCallsEl.style.color = "red";
+                // location.reload();
+        }   else if (percentage > 20 && percentage < 40) {
+                answeredCallsEl.style.color = "yellow";
+        }   else {
+                 answeredCallsEl.style.color = "lightgreen";
+        }
+            answeredCallsEl.textContent = `Доз: ${answeredCalls}`;
+        });
+
+        missedCallBtn.addEventListener('click', function() {
+            if (currentNumber < 1) {
+            missedCalls = 0
+            }
+            else {missedCalls++;
+            missedCallsEl.textContent = `Недоз: ${missedCalls}`;
+        }});
+
+        missedCallBtn.addEventListener('click', function() {
+            if (numbers.length > 0) {
+                currentNumber = numbers.shift();
+                localStorage.setItem('currentNumber', currentNumber);
+
+                updateNumber();
+                } else {
+                    currentNumber = null;
+                    localStorage.removeItem('currentNumber');
+
+                    updateNumber();
+                }
+            }
+        );
+
+        missedCallBtn.addEventListener('click', function() {
+            var totalCalls = calculateTotalCalls(missedCalls, answeredCalls);
+            var percentage = calculatePercentage(answeredCalls, totalCalls);
+            if (percentage <= 15) {
+                answeredCallsEl.style.color = "red";
+        }   else if (percentage > 25 && percentage < 60) {
+                answeredCallsEl.style.color = "yellow";
+        }   else {
+                 answeredCallsEl.style.color = "lightgreen";
+        }
+        });
+          
+        let currentNumber = null;
+		localStorage.removeItem('currentNumber');
+		const lastNumber = localStorage.getItem('currentNumber');
+		if (lastNumber !== null) {
+		  currentNumber = Number(lastNumber);
+		  numbers.splice(numbers.indexOf(currentNumber.toString()), 1);
+		}
+
+        const numberEl = document.getElementById('number');
+		const callBtn = document.getElementById('call-btn');
+		const nextBtn = document.getElementById('next-btn');
+        const copyBtn = document.getElementById('copy-btn');
+        const remainingNumbersEl = document.getElementById('remaining-numbers');
+
+        function updateNumber() {
+            if (currentNumber !== null) {
+                numberEl.textContent = `Номер: ${currentNumber}`;
+            } else if (numbers.length > 0) {
+                numberEl.textContent = 'Нажми на Дозвон';
+            } else {
+                numberEl.textContent = 'Номера закончились';
+            }
+             
+            remainingNumbersEl.textContent = `Осталось: ${numbers.length}`;
+        }
+
+        callBtn.addEventListener('click', function() {
+		  if (currentNumber !== null) {
+			    window.location.href = `whatsapp://send/?phone=${currentNumber}	`;
+		        }
+		    }
+        );
+		updateNumber();
+
+        copyBtn.addEventListener('click', function() {
+            const numberText = numberEl.textContent;
+            const numberOnly = numberText.substring(numberText.indexOf(':') + 2);
+            const tempInput = document.createElement('input');
+            tempInput.value = numberOnly;
+            document.body.appendChild(tempInput);
+            tempInput.select();
+            document.execCommand('copy');
+            document.body.removeChild(tempInput);
+
+            numberEl.style.color = 'black';
+            setTimeout(function() {
+                numberEl.style.color = 'white';
+            }, 0200);
+        });
+
+        const form = document.querySelector('form');
+        const phoneNumberEl = document.getElementById('phone-number');
+        form.addEventListener('submit', function(event) {
+            event.preventDefault();
+            const phoneNumber = phoneNumberEl.value.trim();
+            if (phoneNumber !== '') {
+                window.location.href = `whatsapp://send/?phone=${phoneNumber}`;
+            }
+        });
+        // Add event listener for key press
+        document.addEventListener('keydown', function(event) {
+                // Enter key
+                if (event.code === 'Enter') {
+                    callBtn.click();
+                }
+                // Space key
+                else if (event.code === 'Space') {
+                    copyBtn.click();
+                }
+            }
+        );
+       
+    </script>
+</body>
+</html>
