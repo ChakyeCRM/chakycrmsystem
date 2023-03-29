@@ -368,7 +368,7 @@
         answeredCallBtn.addEventListener('click', function() {
             var totalCalls = calculateTotalCalls(missedCalls, answeredCalls);
             var percentage = calculatePercentage(answeredCalls, totalCalls);
-            if (totalCalls > 8) {
+            if (totalCalls > 1) {
                 if (percentage <= 35) {
                     answeredCallsEl.style.color = "red";
             }   else if (percentage > 35 && percentage < 55) {
@@ -404,7 +404,7 @@
         missedCallBtn.addEventListener('click', function() {
             var totalCalls = calculateTotalCalls(missedCalls, answeredCalls);
             var percentage = calculatePercentage(answeredCalls, totalCalls);
-            if (totalCalls > 8) {
+            if (totalCalls > 1) {
                 if (percentage <= 35) {
                     answeredCallsEl.style.color = "red";
             }   else if (percentage > 35 && percentage < 55) {
