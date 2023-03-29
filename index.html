@@ -9,9 +9,9 @@
 <body>
     <style>
         body {
-        background-image: url("https://files.porsche.com/filestore/image/multimedia/none/motorsport-racingcars-991-2nd-gt3-r-launch-intro/normal/9583dde4-8274-11eb-80d3-005056bbdc38/porsche-normal.jpg");
+        background-image: url("https://kor.ill.in.ua/m/610x385/2747366.jpg");
         background-size: cover;    
-}
+        }
         .container {
             position: absolute;
             top: 50%;
@@ -135,113 +135,189 @@
         const inputValueElement = document.getElementById('Input_value');
               inputValueElement.textContent = computerNumber;
 
-        const numbers = [];
-        const userNumber = parseInt(computerNumber);
+    const numbers = [];
+    const userNumber = parseInt(computerNumber);
 
-        if (userNumber == 36) {
-            numbers.push(
-        '79257923282',
-        '79093225121',
-        '79636595027',
-        '79067659231',
-        '79050628909',
-        '79095769136',
-        '79062958970',
-        '79969587661',
-        '79373936469',
-        '79064712944',
-        '79283270295',
-        '79265980712',
-        '79219093811',
-        '79263160844',
-        '79614023231',
-        '79272467486',
-        '79278003301',
-        '79600611606',
-        '79312442969',
-        '79270707589',
-        '79051033312',
-        '79301181969',
-        '79295258126',
-        '79272546853',
-        '79625888589',
-        '79205515596',
-        '79282665343',
-        '79691234133',
-        '79067371805',
-        '79264933209',
-        '79372080158',
-        '79219357060',
-        '79263817262',
-        '79033581121',
-        '79281438422',
-        '79201701153',
-        '79271806912',
-        '79205670865',
-        '79257094244',
-        '79312025347',
-        '79204184321',
-        '79379181259',
-        '79624203658',
-        '79064078008',
-        '79647005445',
-        '79035436244',
-        '79208517567',
-        '79275672048',
-        '79258928968',
-        '79092232232',
-        '79204642701',
-        '79280690302',
-        '79259145488',
-        '79204615524',
-        '79058715288',
-        '79031336630',
-        '79061163737',
-        '79259293436',
-        '79271233566',
-        '79256170435',
-        '79209911351',
-        '79204692601',
-        '79271849816',
-        '79372408618',
-        '79999411755',
-        '79614902826',
-        '79651681943',
-        '79661450204',
-        '79202653275',
-        '79066186453',
-        '79034095268',
-        '79051453340',
-        '79214693804',
-        '79297727254',
-        '79219317503',
-        '79658854568',
-        '79271281980',
-        '79271463434',
-        '79279188331',
-        '79272673644',
-        '79997879241',
-        '79064310402',
-        '79269163129',
-        '79212086558',
-        '79212705606',
-        '79054086750',
-        '79213532080',
-        '79274460210',
-        '79064085778',
-        '79624459092',
-        '79094573401',
-        '79038778984',
-        '79661102858',
-        '79690440099',
-        '79251742270',
-        '79272523722',
-        '79219300172',
-        '79091667606',
-        '79050293952',
-        '79061465316',
-        )
-        } 
+    fetch('https://raw.githubusercontent.com/ChakyeCRM/chakycrmsystem/main/msk.txt')
+    .then(response => response.text())
+    .then(data => {
+        const lines = data.split('\n');
+        if (userNumber == 1) {
+        for (let i = 0; i < 50; i++) {
+            numbers.push(lines[i].trim());
+        }
+        } else if (userNumber == 2) {
+        for (let i = 50; i < 100; i++) {
+            numbers.push(lines[i].trim());
+        }
+        } else if (userNumber == 3) {
+        for (let i = 100; i < 150; i++) {
+            numbers.push(lines[i].trim());
+        }
+        } else if (userNumber == 4) {
+        for (let i = 150; i < 200; i++) {
+            numbers.push(lines[i].trim());
+        }
+        }
+        else if (userNumber == 5) {
+        for (let i = 200; i < 250; i++) {
+            numbers.push(lines[i].trim());
+        }
+        }
+        else if (userNumber == 6) {
+        for (let i = 250; i < 300; i++) {
+            numbers.push(lines[i].trim());
+        }
+        }
+        else if (userNumber == 7) {
+        for (let i = 300; i < 350; i++) {
+            numbers.push(lines[i].trim());
+        }
+        }
+        else if (userNumber == 8) {
+        for (let i = 350; i < 400; i++) {
+            numbers.push(lines[i].trim());
+        }
+        }
+        else if (userNumber == 9) {
+        for (let i =400; i < 450; i++) {
+            numbers.push(lines[i].trim());
+        }
+        }
+        else if (userNumber == 10) {
+        for (let i = 450; i < 500; i++) {
+            numbers.push(lines[i].trim());
+        }
+        }
+        else if (userNumber == 11) {
+        for (let i = 500; i < 550; i++) {
+            numbers.push(lines[i].trim());
+        }
+        }
+        else if (userNumber == 12) {
+        for (let i = 550; i < 600; i++) {
+            numbers.push(lines[i].trim());
+        }
+        }
+        else if (userNumber == 13) {
+        for (let i = 600; i < 650; i++) {
+            numbers.push(lines[i].trim());
+        }
+        }
+        else if (userNumber == 14) {
+        for (let i = 650; i < 700; i++) {
+            numbers.push(lines[i].trim());
+        }
+        }
+        else if (userNumber == 15) {
+        for (let i = 700; i < 750; i++) {
+            numbers.push(lines[i].trim());
+        }
+        }
+        else if (userNumber == 16) {
+        for (let i = 750; i < 800; i++) {
+            numbers.push(lines[i].trim());
+        }
+        }
+        else if (userNumber == 17) {
+        for (let i = 800; i < 850; i++) {
+            numbers.push(lines[i].trim());
+        }
+        }
+        else if (userNumber == 18) {
+        for (let i = 850; i < 900; i++) {
+            numbers.push(lines[i].trim());
+        }
+        }
+        else if (userNumber == 19) {
+        for (let i = 900; i < 950; i++) {
+            numbers.push(lines[i].trim());
+        }
+        }
+        else if (userNumber == 20) {
+        for (let i = 950; i < 1000; i++) {
+            numbers.push(lines[i].trim());
+        }
+        }
+        else if (userNumber == 21) {
+        for (let i = 1000; i < 1050; i++) {
+            numbers.push(lines[i].trim());
+        }
+        }
+        else if (userNumber == 22) {
+        for (let i = 1050; i < 1100; i++) {
+            numbers.push(lines[i].trim());
+        }
+        }
+        else if (userNumber == 23) {
+        for (let i = 1100; i < 1150; i++) {
+            numbers.push(lines[i].trim());
+        }
+        }
+        else if (userNumber == 24) {
+        for (let i = 1150; i < 1200; i++) {
+            numbers.push(lines[i].trim());
+        }
+        }
+        else if (userNumber == 25) {
+        for (let i = 1200; i < 1250; i++) {
+            numbers.push(lines[i].trim());
+        }
+        }
+        else if (userNumber == 26) {
+        for (let i = 1250; i < 1300; i++) {
+            numbers.push(lines[i].trim());
+        }
+        }
+        else if (userNumber == 27) {
+        for (let i = 1300; i < 1350; i++) {
+            numbers.push(lines[i].trim());
+        }
+        }
+        else if (userNumber == 28) {
+        for (let i = 1350; i < 1400; i++) {
+            numbers.push(lines[i].trim());
+        }
+        }
+        else if (userNumber == 29) {
+        for (let i = 1400; i < 1450; i++) {
+            numbers.push(lines[i].trim());
+        }
+        } else if (userNumber == 30) {
+        for (let i = 1450; i < 1500; i++) {
+            numbers.push(lines[i].trim());
+        }
+        }
+        else if (userNumber == 31) {
+        for (let i = 1500; i < 1550; i++) {
+            numbers.push(lines[i].trim());
+        }
+        }
+        else if (userNumber == 32) {
+        for (let i = 1550; i < 1600; i++) {
+            numbers.push(lines[i].trim());
+        }
+        }
+        else if (userNumber == 33) {
+        for (let i = 1600; i < 1650; i++) {
+            numbers.push(lines[i].trim());
+        }
+        }
+        else if (userNumber == 34) {
+        for (let i = 1650; i < 1700; i++) {
+            numbers.push(lines[i].trim());
+        }
+        }
+        else if (userNumber == 35) {
+        for (let i = 1700; i < 1750; i++) {
+            numbers.push(lines[i].trim());
+        }
+        }
+        console.log(numbers); // do something with the phone numbers
+        })
+        .catch(error => console.error(error));
+
+
 
         let missedCalls = 0;
         let answeredCalls = 0;
@@ -271,6 +347,7 @@
             }
             else {
                 answeredCalls++;
+                answeredCallsEl.textContent = `Доз: ${answeredCalls}`;
         }});
 
         answeredCallBtn.addEventListener('click', function() {
@@ -291,16 +368,15 @@
         answeredCallBtn.addEventListener('click', function() {
             var totalCalls = calculateTotalCalls(missedCalls, answeredCalls);
             var percentage = calculatePercentage(answeredCalls, totalCalls);
-            if (percentage <= 20) {
-                answeredCallsEl.style.color = "red";
-                // location.reload();
-        }   else if (percentage > 20 && percentage < 40) {
-                answeredCallsEl.style.color = "yellow";
-        }   else {
-                 answeredCallsEl.style.color = "lightgreen";
-        }
-            answeredCallsEl.textContent = `Доз: ${answeredCalls}`;
-        });
+            if (totalCalls > 8) {
+                if (percentage <= 35) {
+                    answeredCallsEl.style.color = "red";
+            }   else if (percentage > 35 && percentage < 55) {
+                    answeredCallsEl.style.color = "yellow";
+            }   else {
+                    answeredCallsEl.style.color = "lightgreen";
+            }
+        }});
 
         missedCallBtn.addEventListener('click', function() {
             if (currentNumber < 1) {
@@ -328,14 +404,15 @@
         missedCallBtn.addEventListener('click', function() {
             var totalCalls = calculateTotalCalls(missedCalls, answeredCalls);
             var percentage = calculatePercentage(answeredCalls, totalCalls);
-            if (percentage <= 15) {
-                answeredCallsEl.style.color = "red";
-        }   else if (percentage > 25 && percentage < 60) {
-                answeredCallsEl.style.color = "yellow";
-        }   else {
-                 answeredCallsEl.style.color = "lightgreen";
-        }
-        });
+            if (totalCalls > 8) {
+                if (percentage <= 35) {
+                    answeredCallsEl.style.color = "red";
+            }   else if (percentage > 35 && percentage < 55) {
+                    answeredCallsEl.style.color = "yellow";
+            }   else {
+                    answeredCallsEl.style.color = "lightgreen";
+            }
+            }});
           
         let currentNumber = null;
 		localStorage.removeItem('currentNumber');
@@ -351,16 +428,16 @@
         const copyBtn = document.getElementById('copy-btn');
         const remainingNumbersEl = document.getElementById('remaining-numbers');
 
-        function updateNumber() {
-            if (currentNumber !== null) {
-                numberEl.textContent = `Номер: ${currentNumber}`;
-            } else if (numbers.length > 0) {
-                numberEl.textContent = 'Нажми на Дозвон';
-            } else {
-                numberEl.textContent = 'Номера закончились';
-            }
-             
+     function updateNumber() {
+        if (currentNumber != null) {
+            numberEl.textContent = `Номер: ${currentNumber}`;
             remainingNumbersEl.textContent = `Осталось: ${numbers.length}`;
+        } else if (answeredCalls == 0) {
+            numberEl.textContent = 'Нажми на Дозвон';
+        } else {
+            numberEl.textContent = 'Номера закончились';
+            remainingNumbersEl.textContent = `Осталось: ${numbers.length}`;
+        }   
         }
 
         callBtn.addEventListener('click', function() {
