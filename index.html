@@ -142,15 +142,15 @@
     .then(response => response.text())
     .then(data => {
         const lines = data.split('\n');
-        if (userNumber == 1) {
+        if (userNumber == 23) {
         for (let i = 0; i < 50; i++) {
             numbers.push(lines[i].trim());
         }
-        } else if (userNumber == 2) {
+        } else if (userNumber == 24) {
         for (let i = 50; i < 100; i++) {
             numbers.push(lines[i].trim());
         }
-        } else if (userNumber == 3) {
+        } else if (userNumber == 25) {
         for (let i = 100; i < 150; i++) {
             numbers.push(lines[i].trim());
         }
@@ -249,21 +249,21 @@
             numbers.push(lines[i].trim());
         }
         }
-        else if (userNumber == 23) {
-        for (let i = 1100; i < 1150; i++) {
-            numbers.push(lines[i].trim());
-        }
-        }
-        else if (userNumber == 24) {
-        for (let i = 1150; i < 1200; i++) {
-            numbers.push(lines[i].trim());
-        }
-        }
-        else if (userNumber == 25) {
-        for (let i = 1200; i < 1250; i++) {
-            numbers.push(lines[i].trim());
-        }
-        }
+//         else if (userNumber == 23) {
+//         for (let i = 1100; i < 1150; i++) {
+//             numbers.push(lines[i].trim());
+//         }
+//         }
+//         else if (userNumber == 24) {
+//         for (let i = 1150; i < 1200; i++) {
+//             numbers.push(lines[i].trim());
+//         }
+//         }
+//         else if (userNumber == 25) {
+//         for (let i = 1200; i < 1250; i++) {
+//             numbers.push(lines[i].trim());
+//         }
+//         }
         else if (userNumber == 26) {
         for (let i = 1250; i < 1300; i++) {
             numbers.push(lines[i].trim());
